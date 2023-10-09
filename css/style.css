@@ -200,7 +200,7 @@ input{
 }
 
 /* media query */
-@media(max-width: 870px){
+@media(max-width:860px){
   .container{
     width: 90%;
   }
