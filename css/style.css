@@ -1,0 +1,201 @@
+body{
+  margin: 0;
+  font-family: 'Source Sans 3', sans-serif;
+  user-select: none;
+}
+
+.container{
+  display: flex;
+  width: 480px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* typography */
+
+.align-left{
+  margin-left: auto;
+}
+
+h1,h3{
+  margin: 0;
+}
+
+.lighter{
+  font-weight:300;
+}
+
+.small{
+  font-size: 13px;
+}
+
+.p-product{
+  color: #747474;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  line-height: 1.5;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: px;
+  
+}
+
+/* layout */
+
+.header{
+  width: 540px;
+  display: flex;
+  background-image: url(../img/eiliv-aceron-mwbjyRUTlIQ-unsplash.jpg);
+  background-size: cover;
+  padding: 40px;
+  flex-direction: column;
+  color: whitesmoke;
+  text-shadow: 0 0 2px black;
+  font-family: 'Smythe', cursive;
+  margin-bottom: 10px;
+}
+
+.list-products{
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  align-items: center;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+  border-bottom: #747474 1px solid;
+}
+
+li{
+  list-style-type: none;
+}
+
+.img-product{
+  width: 100px;
+display: block;
+}
+
+.text{
+  width: 300px;
+  align-self: flex-start;
+}
+
+.order-resume{
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px #000;
+}
+
+.order-resume2, .order-resume{
+  display: none;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.selected-product, .total{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.selected-product{
+  padding: 0 0 10px 0;
+}
+
+.selected-products{
+  border-bottom: #252525 2px solid;
+}
+
+.modal-title{
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.fa-solid{
+  margin-left: 10px;
+  color:#969595;
+}
+
+.fa-solid, .fa-regular{
+  cursor: pointer;
+}
+
+.fa-solid:active, .fa-regular:active{
+  opacity: .5;
+}
+
+button{
+  width: 100%;
+  padding: 20px; 
+  font-size: 18px; 
+  font-weight: 600;
+  color: whitesmoke;
+  background-color: rgb(255, 98, 0);
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:active{
+  background-color: rgb(220, 84, 0);
+
+}
+
+.pay-method-modal{
+  box-shadow: 20px 20px 100px #6b6b6b;
+  border-radius: 3px;
+  height: 390px;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  display: none;
+}
+
+.x{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+}
+
+.x:active{
+  opacity: .5;
+}
+
+form{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 18px;
+  font-size: 16px;
+  border: #747474 solid 1px;
+  border-radius: 3px;
+  margin: 10px 0;
+}
+
+
+
