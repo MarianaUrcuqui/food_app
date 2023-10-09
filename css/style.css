@@ -87,6 +87,8 @@ display: block;
   align-self: flex-start;
 }
 
+
+/* order resume */
 .order-resume{
   text-align: center;
   position: fixed;
@@ -195,6 +197,26 @@ input{
   border: #747474 solid 1px;
   border-radius: 3px;
   margin: 10px 0;
+}
+
+/* media query */
+@media(max-width: 870px){
+  .container{
+    width: 90%;
+  }
+
+  .plus{
+    margin-left:auto;
+  }
+
+  .text{
+    margin-left: 1rem;
+    font-size: 1.3rem;
+  }
+  .p-product{
+    font-size: 1.2rem;
+  }
+  
 }
 
 

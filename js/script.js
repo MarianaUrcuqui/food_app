@@ -110,7 +110,7 @@ function getProducts(arr){
             <p class="p-product">${product.ingredients.join(', ')}</p>
             <h3 class="lighter">$${product.price}</h3>
           </li>
-          <li>
+          <li class="plus">
             <i class="fa-regular fa-square-plus fa-xl" data-add="${product.id}"></i>
           </li>
         </ul>
