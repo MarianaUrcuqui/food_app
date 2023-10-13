@@ -33,16 +33,22 @@ document.getElementById("form").addEventListener("submit", function(e){
 
 function renderOrderProducts(){
   const orderResumeEl = document.getElementById("order-resume")
-  const orderResume2El = document.getElementById("order-resume2")
   const selectedProductsEl = document.getElementById("selected-products")
-  const selectedProducts2El = document.getElementById("selected-products2")
+  const mainEl = document.getElementById("main")
 
   orderResumeEl.style.display = orderResume.length > 0 ? "flex" : "none"
-  orderResume2El.style.display = orderResume.length > 0 ? "flex" : "none"  
+
+  // This will let the user see all of the products even if there are products in the order resume
+  if(orderResume.length < 1){
+    mainEl.style.marginBottom = "0px"
+  }else if(orderResume.length > 0 && orderResume.length < 4){
+    mainEl.style.marginBottom = "280px"
+  }else{
+    mainEl.style.marginBottom = "400px"
+  }
   
   const productsArray = addToOrderResume()
   selectedProductsEl.innerHTML = productsArray
-  selectedProducts2El.innerHTML = productsArray
 }
 
 function addToOrderResume(){
@@ -68,10 +74,8 @@ function addProduct(productId){
 
 function renderTotal(){
   const totalEl = document.getElementById("total")
-  const total2El = document.getElementById("total2")
   const total = getTotal()
   totalEl.innerHTML = total
-  total2El.innerHTML = total
 
 }
 
